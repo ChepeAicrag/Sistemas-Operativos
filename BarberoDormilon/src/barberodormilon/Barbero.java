@@ -55,6 +55,11 @@ public void MostrarClientes(){
 }
 
 
+public void pasarCliente() throws InterruptedException{
+    if(!sillas.elementAt(0).getPasar())
+        sillas.elementAt(0).pasar();
+}
+
 }
 
 

@@ -13,6 +13,7 @@ public Cliente(int id, Barbero barbero){
     this.barbero = barbero;
     hilo = new Thread();
     hilo.start();
+    
     tiempoCorte = (int)(Math.random() * 5000 + 1);
            
 }
@@ -33,6 +34,7 @@ public int getTiempoCorte(){
 public void pasar() throws InterruptedException{
     System.out.println("El cliente " + getNum() + "está cortandose el pelo");
     pasar = true;
+    
     hilo.sleep(getTiempoCorte());
     System.out.println("El cliente " + getNum() + " terminpo de pasar");
 }

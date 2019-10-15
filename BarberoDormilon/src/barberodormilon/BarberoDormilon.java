@@ -14,11 +14,12 @@ public class BarberoDormilon {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Barbero barbero= new Barbero(5, 10);
         barbero.RellenaBarberia(barbero);
         
         barbero.MostrarClientes();
+        barbero.pasarCliente();
         
     }
     
