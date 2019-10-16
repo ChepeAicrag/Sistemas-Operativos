@@ -15,11 +15,15 @@ public class BarberoDormilon {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws InterruptedException {
-        Barbero barbero= new Barbero(5, 10);
-        barbero.RellenaBarberia(barbero);
         
+        Barbero barbero= new Barbero(1, 5);
+        barbero.RellenaBarberia(barbero);
         barbero.MostrarClientes();
+        long  tiempoInicial = System.currentTimeMillis();
         barbero.pasarCliente();
+        long  tiempoFinal = System.currentTimeMillis();
+        System.out.println("\nSe tardo en ejecutar " + (tiempoFinal-tiempoInicial));
+        
         
     }
     
