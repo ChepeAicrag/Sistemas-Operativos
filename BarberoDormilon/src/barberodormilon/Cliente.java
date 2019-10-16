@@ -29,7 +29,7 @@ public int getTiempoCorte(){
 }
 
 public void pasar() throws InterruptedException{
-    System.out.println("El cliente " + getNum() + " está cortandose el pelo");
+    System.out.println("\nEl cliente " + getNum() + " está cortandose el pelo");
     pasar = true;
     hilo.sleep(getTiempoCorte());
     if(barbero.getN_Clientes() >= barbero.getN_Sillas()){
