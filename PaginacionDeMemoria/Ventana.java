@@ -29,10 +29,8 @@ public class Ventana extends JFrame {
         panel.setBackground(Color.black);
         panel.setPreferredSize(new Dimension(2000,1080));
         deslizador.setViewportView(panel);
-        //panel.setPreferredSize(new Dimension(5000,5000));
         this.getContentPane().add(deslizador);
         crearPaginas();
-        
     }  
     
     private void crearPaginas(){

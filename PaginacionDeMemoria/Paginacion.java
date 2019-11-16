@@ -1,11 +1,10 @@
-
 import javax.swing.JOptionPane;
 /**
- *
+ * Paginacion de Memoria 
  * @author José Ángel García García
  */
 public class Paginacion {
-    public static void main(String[] args) {
+    public static void main(String[] args) {       
         int tamArchivo = 0;
         int tamPagina = 0;
         boolean op = false;
@@ -22,6 +21,7 @@ public class Paginacion {
             }catch(Exception e){
                     JOptionPane.showMessageDialog(null, "Introduzca correctamente los datos");
             }
-         Ventana ventana = new Ventana(tamArchivo, tamPagina);
-     }
-}
+         new Ventana(tamArchivo,tamPagina);
+        }
+  }
+ 
