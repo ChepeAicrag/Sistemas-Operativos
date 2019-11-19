@@ -34,27 +34,22 @@ public class Ventana extends JFrame {
     }  
     
     private void crearPaginas(){
-        
         float x = (float) tamArchivo/tamPagina;
         int cont = 1;
         int posX = 100;
         int posY = 80;
         while (cont <= x) {            
-            
             // Creación de la hoja fisica
-            JLabel hojaFisica = new JLabel("Pagina Fisica " + cont + " " + tamPagina + " mb",SwingConstants.CENTER);
+            JLabel hojaFisica = new JLabel("Pagina Fisica " + cont + " -- " + tamPagina + " mb",SwingConstants.CENTER);
             hojaFisica.setOpaque(true);
             hojaFisica.setBackground(new Color((int) (Math.random()*255),(int) (Math.random()*255),(int) (Math.random()*255)));
             hojaFisica.setBounds(posX,posY,150,30);
-            
             // Creación de la hoja virtual
-            JLabel hojaVirtual = new JLabel("Pagina Virtual " + cont + " " + tamPagina + " mb",SwingConstants.CENTER);
+            JLabel hojaVirtual = new JLabel("Pagina Virtual " + cont + " -- " + tamPagina + " mb",SwingConstants.CENTER);
             hojaVirtual.setOpaque(true);
             hojaVirtual.setBackground(new Color((int) (Math.random()*255),(int) (Math.random()*255),(int) (Math.random()*255)));
             hojaVirtual.setBounds(posX,posY + 40,150,30);
-            
             posY += 100;
-            
             if(cont % 10 == 0){
                 posX += 200;
                 posY = 80;
@@ -62,10 +57,9 @@ public class Ventana extends JFrame {
             panel.add(hojaFisica);
             panel.add(hojaVirtual);
             cont++;
-            
         }
         if(x % 1 != 0){
-            JLabel hojaFisica = new JLabel("Pagina Fisica " + cont + " " + tamPagina + " mb" ,SwingConstants.CENTER);
+            JLabel hojaFisica = new JLabel("Pagina Fisica " + cont + " -- " + tamPagina + " mb" ,SwingConstants.CENTER);
             hojaFisica.setOpaque(true);
             hojaFisica.setBackground(new Color((int) (Math.random()*255),(int) (Math.random()*255),(int) (Math.random()*255)));
             hojaFisica.setBounds(posX,posY,150,30);

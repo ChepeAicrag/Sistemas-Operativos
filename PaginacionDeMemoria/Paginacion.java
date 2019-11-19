@@ -1,6 +1,8 @@
 import javax.swing.JOptionPane;
 /**
  * Paginacion de Memoria 
+ * Materia : Sistemas Operativos 
+ * Clase ---  15: 00 - 16:00
  * @author José Ángel García García
  */
 public class Paginacion {
